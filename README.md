@@ -1,14 +1,14 @@
 # Pfam-Annotation
-# Introduction to HMMER
-# HMMER is similar to BLAST and is mainly used for sequence alignment.
+Introduction to HMMER
+HMMER is similar to BLAST and is mainly used for sequence alignment.
 
 wget ftp://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam27.0/Pfam-A.hmm.gz
 wget ftp://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam27.0/Pfam-B.hmm.gz
 gzip -d Pfam-A.hmm.gz; gzip -d Pfam-B.hmm.gz
 
-# Get the HMM file of the PFAM database. The HMM file is a text file, 
-# which needs to be converted into a binary format to speed up the operation, 
-# while being compressed and built into an index database.
+Get the HMM file of the PFAM database. The HMM file is a text file, 
+which needs to be converted into a binary format to speed up the operation, 
+while being compressed and built into an index database.
 
 hmmpress Pfam-A.hmm
 hmmpress Pfam-B.hmm
